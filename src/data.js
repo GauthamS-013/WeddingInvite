@@ -1,4 +1,4 @@
-export const couple = { bride: 'Nandini R', groom: 'Siddharth S' }
+export const couple = { bride: 'Nandini', groom: 'Siddharth' }
 
 export const weddingDate = '2027-01-22T11:00:00+05:30' // used by the countdown
 export const dateLabel = 'Friday, 22 January 2027'
