@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* Design tokens: use as bg-ink, text-gold, border-line, font-script, etc. */
+
+@theme {
+  --color-paper: #FAF6EC;   /* warm cream */
+  --color-blush: #F1E9D8;   /* deeper cream, used for form fields */
+  --color-card: #FFFDF8;    /* off-white */
+  --color-body: #4A4034;
+  --color-ink: #3E3427;     /* stays dark, used on gold buttons */
+  --color-wine: #9A6B3F;    /* warm bronze for headings */
+  --color-rose: #d1697a;    /* petals become soft champagne */
+  --color-gold: #BE9B52;
+  --color-line: #E8DDC4;
+  --font-script: 'Pinyon Script', 'Snell Roundhand', cursive;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  --animate-fade: fade 1.6s 0.3s forwards;
+  --animate-write: write 2.2s forwards;
+  --animate-pop: pop 1s forwards;
+  --animate-drop: drop 2s 5s infinite;
+  --animate-fall: fall 10s linear infinite;
+
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes write { to { clip-path: inset(0 0 0 0); } }
+  @keyframes pop { from { transform: scale(0.3); } to { opacity: 1; transform: scale(1); } }
+  @keyframes drop {
+    0% { opacity: 0; transform: scaleY(0); transform-origin: top; }
+    50% { opacity: 1; transform: scaleY(1); }
+    100% { opacity: 0; }
+  }
+  @keyframes fall { to { transform: translate(var(--dx), 110vh) rotate(540deg); } }
+}
+
+/* Dark mode: swap the tokens */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #342D26;   /* warm taupe, not black */
+    --color-blush: #413830;
+    --color-card: #3C342C;
+    --color-body: #F2EAD8;
+    --color-wine: #E3BE8A;
+    --color-gold: #D9B96C;
+    --color-line: #5A4F43;
+  } 
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-body);
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  :focus-visible { outline: 3px solid var(--color-wine); outline-offset: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01s !important; animation-delay: 0s !important; transition: none !important; }
+  .animate-fall { display: none; }
+}
