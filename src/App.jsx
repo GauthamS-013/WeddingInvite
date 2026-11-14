@@ -14,7 +14,7 @@ const H2 =
   "mb-4 font-script text-[clamp(2.4rem,9vw,3.6rem)] font-normal text-wine";
 const LEAD = "mx-auto max-w-[34rem] text-[1.35rem] italic";
 const BTN =
-  "inline-block cursor-pointer rounded-full bg-gold px-6 py-2.5 font-semibold text-ink no-underline transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold/40";
+  "inline-block cursor-pointer rounded-full bg-gold px-6 py-2.5 font-semibold text-[#3E3427] no-underline transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold/40";
 const FIELD =
   "w-full rounded-lg border border-[#F3E6E3] bg-blush px-3 py-2.5 text-ink";
 
