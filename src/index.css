@@ -36,14 +36,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-paper: #342D26;   /* warm taupe, not black */
-    --color-blush: #413830;
-    --color-card: #3C342C;
-    --color-body: #F2EAD8;
+    --color-paper: #344e41;
+    --color-blush: #3a5a40;
+    --color-card: #588157;
+    --color-body: #dad7cd;
     --color-wine: #E3BE8A;
     --color-gold: #D9B96C;
     --color-line: #5A4F43;
-    --color-ink: #E3BE8A;
+    --color-ink: #a3b18a;
   } 
 }
 
