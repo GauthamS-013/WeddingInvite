@@ -1,6 +1,6 @@
 export const couple = { bride: 'Nandini', groom: 'Siddharth' }
 
-export const weddingDate = '2027-01-22T11:00:00+05:30' // used by the countdown
+export const weddingDate = '2027-01-22T10:15:00+05:30' // used by the countdown
 export const dateLabel = 'Friday, 22 January 2027'
 export const receptionDateLabel = 'Saturday, 23 January 2027'
 export const rsvpBy = '01 December 2026'
@@ -9,7 +9,7 @@ export const whatsappNumber = '919591529095'
 export const events = [
   {
     title: 'The Wedding',
-    time: '11:00 AM',
+    time: '10:15 AM',
     date: '22 January 2027',
     venue: '1955 Vitage Convention Center',
     address: 'Farook College Road, Kozhikode, Kerala',
