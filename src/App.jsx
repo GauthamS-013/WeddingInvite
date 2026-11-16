@@ -113,7 +113,7 @@ function Hero() {
       </p>
       <h1 className="my-4 w-full font-script text-[clamp(3.6rem,15vw,8rem)] leading-[1.05] font-normal text-gold">
         <span className={name} style={{ animationDelay: "1.2s" }}>
-          {couple.groom}
+          {couple.bride}
         </span>
         <span
           className="block animate-pop text-[0.5em] opacity-0"
@@ -122,7 +122,7 @@ function Hero() {
           &amp;
         </span>
         <span className={name} style={{ animationDelay: "3s" }}>
-          {couple.bride}
+          {couple.groom}
         </span>
       </h1>
       <div
@@ -495,7 +495,7 @@ export default function App() {
         </p>
         <p className="mb-4 text-[1.4rem] italic">With love,</p>
         <p className="font-script text-5xl text-wine">
-          {couple.groom} &amp; {couple.bride}
+          {couple.bride} &amp; {couple.groom}
         </p>
       </Reveal>
       <Credit />
