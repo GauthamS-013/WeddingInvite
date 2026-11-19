@@ -11,7 +11,7 @@ export const events = [
     title: 'The Wedding',
     time: '10:15 AM',
     date: '22 January 2027',
-    venue: '1955 Vitage Convention Center',
+    venue: '1955 Vintage Convention Center',
     address: 'Farook College Road, Kozhikode, Kerala',
     map: 'https://maps.app.goo.gl/vY58QLJGoNsSFb9p8',
   },
